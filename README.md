@@ -4,14 +4,15 @@
 
 ### Complete documentation of JPDB --- http://login2explore.com/jpdb/docs.html 
 
-### "This project is all about basics JsonPowerDB(JPDB) and how to perform CRUD operations."
-In this I have used PUT request to save the data form a form into our database
+### "This project is all about basics of JsonPowerDB(JPDB) and how to perform CRUD operations."
+In this small project I have used PUT request to save the data form a form into our database
 
 ## About JPDB
 JsonPowerDB is a Database Server with Developer friendly REST API services. It's a High Performance, Light Weight, Ajax Enabled, Serverless, Simple to Use, Real-time Database. Easy and fast to develop database applications without using any server side programming / scripting or without installing any kind of database.
 
 ## Benifits Of Using JPDB:
-* JPDB is simple to use,schema free and easy to maintain. It provides Serverless support and helps in faster development-cuts time to market.
+* JPDB is simple to use,schema free and easy to maintain.
+* It provides Serverless support and helps in faster development-cuts time to market.
 * It is a multi-mode database i.e, one solution to variety of data.
 * It has multiple security layers.
 * Build around world's fastest indexing engine PowerIndex.
