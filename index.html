@@ -1,0 +1,96 @@
+<DOCTYPE html>
+<html>
+
+<head>
+	<!-- Compiled and minified CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+	<!-- Compiled and minified JavaScript -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+	<!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<!-- javascript library jpdb-commons.js -->
+	<script src = "http://login2explore.com/jpdb/resources/js/0.0.3/jpdb-commons.js"></script>
+	<!-- Jquery minified -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<title>Student Data</title>
+</head>
+
+<body>
+
+	<div class='container'>
+	<header style="text-align: center; color:#26a69a; margin:20px;">
+		<h4>STUDENT INFORMATION</h4>
+	</header>
+	<form method="POST" autocomplete="off">
+		<div class="input-field">
+          <input id="name" type="text" required />
+		  <label for="name">Student Name</label>
+        </div>
+		<div class="input-field">
+          <input id="rollno" type="number" required />
+		  <label for="rollno">Roll Number</label>
+        </div>
+		<div class="input-field">
+          <input id="email" type="text" required />
+		  <label for="email">Email Address (abc@gmail.com)</label>
+        </div>
+		<div class="input-field">
+          <input id="number" type="tel" pattern="[0-9]{10}" required />
+		  <label for="number">Mobile Number(10 Digits)</label>
+        </div>
+		<div>
+			<button class="btn waves-effect waves-light" type="submit" onclick="saveData();">Submit
+				<i class="material-icons right">send</i>
+			</button> 
+        </div>
+	</form>
+	</div>
+	<script>
+		$("#name").focus();
+		function validateForm(){
+			var namevar = $("#name").val();
+			if(namevar === ""){
+				alert("Stdent name is required");
+				$("#name").focus();
+				return "";
+			}
+			var rollnovar = $("#rollno").val();
+			if(rollnovar === ""){
+				alert("Roll number is required");
+				$("#rollno").focus();
+				return "";
+			}
+			var emailvar = $("#email").val();
+			if(emailvar === ""){
+				alert("Email address is required");
+				$("#email").focus();
+				return "";
+			}
+			var numbervar = $("#number").val();
+			if(numbervar === ""){
+				alert("Mobile number is required");
+				$("#number").focus();
+				return "";
+			}
+			var jsonStrObj = {
+				name: namevar,
+				rollno: rollnovar,
+				email: emailvar,
+				number: numbervar
+			};
+			return JSON.stringify(jsonStrObj);
+		}
+		function saveData(){
+			var jsonStr = validateForm();
+			if(jsonStr === "")
+				return;
+			var putRequest = createPUTRequest("90935843|-31948844887455381|90945262", jsonStr, "STUDENT", "stu-rel");
+			
+			jQuery.ajaxSetup({async: false});
+			var resultObj = executeCommandAtGivenBaseUrl(putRequest, "http://api.login2explore.com:5577", "/api/iml");
+			jQuery.ajaxSetup({async: true});
+		}
+	</script>
+</body>
+
+</html>
