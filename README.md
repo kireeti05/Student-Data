@@ -18,22 +18,6 @@ JsonPowerDB is a Database Server with Developer friendly REST API services. It's
 * Build around world's fastest indexing engine PowerIndex.
 * Inbuilt support for querying multiple instances
 
-### Release History
-#### (15/07/2021)
-##### Initialization:
-- [#1] Added basic designs of all planned HTML page
----
-#### (15/07/2021)
-##### Enhancements:
-- [#2] Designed all HTML pages
-- [#3] Added JS and connected pages to JsonPowerDB
----
-#### (16/07/2021)
-##### Enhancements:
-- [#5] Added a README.md file
-- [#6] Few CSS changes
----
-
 ## Screenshots:
 ### This our HTML form
 ![Screenshot (27)](https://user-images.githubusercontent.com/70832255/125896147-d6bb7597-ed26-42b2-accd-107edb695557.png)
