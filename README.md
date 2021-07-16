@@ -19,16 +19,16 @@ JsonPowerDB is a Database Server with Developer friendly REST API services. It's
 * Inbuilt support for querying multiple instances
 
 ### Release History
-#### v0.0.0 (15/07/2021)
+#### (15/07/2021)
 ##### Initialization:
 - [#1] Added basic designs of all planned HTML page
 ---
-#### v0.1.0 (15/07/2021)
+#### (15/07/2021)
 ##### Enhancements:
 - [#2] Designed all HTML pages
 - [#3] Added JS and connected pages to JsonPowerDB
 ---
-#### v0.1.1 (16/07/2021)
+#### (16/07/2021)
 ##### Enhancements:
 - [#5] Added a README.md file
 - [#6] Few CSS changes
