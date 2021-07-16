@@ -51,7 +51,7 @@ JsonPowerDB is a Database Server with Developer friendly REST API services. It's
   * Web Browser
   * Database Connection Token
 #### Execution
-* open `index.html` to open the Indec page
+* open `index.html` to open the Index page
 
 ### Scope of functionalities
 * It is a very basic project for demonstration of JsonPowerDb with help of a web application. 
